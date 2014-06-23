@@ -51,7 +51,7 @@ public class WordNoramlizer implements IRichBolt {
 	}
 	
 	@Override
-	public void prepare(Map arg0, TopologyContext arg1, OutputCollector arg2) {
+	public void prepare(Map arg0, TopologyContext arg1, OutputCollector collector) {
 		this.collector = collector;
 		
 	}
