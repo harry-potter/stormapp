@@ -48,7 +48,7 @@ public class WordCounter implements IRichBolt {
 	public void cleanup() {
 	System.out.println("WordCounter["+name+"-"+id+"]");
 	for(Map.Entry<String, Integer> entry : wordCounter.entrySet()){
-		System.out.println("********"+entry.getKey() +":" + entry.getValue());
+		System.out.println(entry.getKey() +":" + entry.getValue());
 	}
 		
 	}
